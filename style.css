@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E9F1FA;
+}
+h1 {
+  text-align: center;
+}
+form {
+  height: 70%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+   background-color: white;
+  align-items: center;
+  border: 1px solid grey;
+  border-radius: 25px;
+  
+  margin-bottom: 50px;
+ 
+}
+select {
+  height: 40px;
+  width: 400px;
+}
+p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.answer-icon{
+  position: absolute;
+  top: 166px;
+  left: 760px;
+}
+.answer-icon2{
+  position: absolute;
+  top: 258px;
+  left: 703px;
+}
+.answer-icon3{
+  position: absolute;
+  top: 350px;
+  left: 687px;
+}
+.answer-icon4{
+  position: absolute;
+  top: 442px;
+  left: 797px;
+}
+input {
+  height: 40px;
+  width: 400px;
+    position: relative;
+  
+}
+.error-icon {
+  position:absolute;
+  
+    top: 195px;
+    left: 948px;
+    display: none; 
+    color: red;
+}
+.error-icon2{
+  position: absolute;
+  left: 948px;
+  top: 287px;
+}
+.error-icon3{
+  position: absolute;
+  left: 948px;
+  top: 472px;
+}
+
+.error-visibility{
+  display: inline-block;
+}
+.btn {
+  background-color: blue;
+  height: 40px;
+  width: 400px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.btn:hover {
+  background-color: rgb(158, 158, 244);
+}
+.ptag {
+  color: white;
+}
+
+
+/* style for answer tooltip */
+
+.ans-tooltip {
+  visibility: hidden;
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+  bottom: calc(76% + 10px); 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.answer-icon:hover + .ans-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.ans-tooltip1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+  bottom: calc(64% + 5px); 
+  left: 46%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.answer-icon:hover + .ans-tooltip1 {
+  visibility: visible;
+  opacity: 1;
+}
+.ans-tooltip2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+  bottom: calc(51% + 8px); 
+  left: 45%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.answer-icon:hover + .ans-tooltip2 {
+  visibility: visible;
+  opacity: 1;
+}
+.ans-tooltip3 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+  bottom: calc(39% + 5px); 
+  left: 53%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.answer-icon:hover + .ans-tooltip3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.tooltip1 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+  bottom: calc(74% + 5px); 
+  left: 60%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.error-icon:hover + .tooltip1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.tooltip2 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+  bottom: calc(62% + 3px); 
+  left: 60%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.error-icon:hover + .tooltip2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip3 {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 14px;
+  bottom: calc(37% + 2px); 
+  left: 60%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.error-icon:hover + .tooltip3 {
+  visibility: visible;
+  opacity: 1;
+}
+.box{
+  background-color: whitesmoke;
+  width: 40%;
+  height: 60%;
+  top: 20%;
+  position: absolute;
+  display: none;
+  
+}
+.box-btn{
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  padding: 10px;
+  border-radius: 10px;
+   color: white;
+   background-color: blue;
+}
+.box-btn:hover{
+background-color: rgb(11, 11, 221);
+}

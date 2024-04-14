@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <form id="myForm">
+      <div class="input-container">
+        <h1>Tax Calculator</h1>
+        <i class="bi bi-patch-question answer-icon"></i>
+        <span class="ans-tooltip" id="ans-tooltip1"> Gross annual income is your total salary in a year before any deduction  </span>
+        <p class="p1">Enter Gross Annual Income</p>
+        <input type="text" id="grossIncome" class="number-input" placeholder="Enter Gross Annual Income" required>
+        <i class="bi bi-patch-exclamation error-icon" id="grossIncomeError"></i>
+        <span class="tooltip1" id="grossIncomeTooltip"> Only numbers are allowed</span>
+      </div>
+      <div>
+        <p class="p2">Enter Extra Income</p>
+        <i class="bi bi-patch-question answer-icon answer-icon2"></i>
+        <span class="ans-tooltip1" id="ans-tooltip2"> Other Income</span>
+        <input type="text" id="extraIncome" class="number-input" placeholder="Enter extra income from any other sources"
+          required>
+        <i class="bi bi-patch-exclamation error-icon2 error-icon" id="extraIncomeError"></i>
+        <span class="tooltip2" id="extraIncomeTooltip"> Only numbers are allowed</span>
+      </div>
+      <div>
+        <p class="p3">Enter Age Group</p>
+        <i class="bi bi-patch-question answer-icon answer-icon3"></i>
+        <span class="ans-tooltip2" id="ans-tooltip3"> Enter in which age group you lies</span>
+        <select name="select" id="age" class="number-input" required>
+          <i class="bi bi-patch-exclamation error-icon4 error-icon" id="extraIncomeError"></i>
+          <option value="" disabled selected>Select age group</option>
+          <option value="<40">&lt;40</option>
+          <option value="≥40 & <60">&ge;40 &amp; &lt;60</option>
+          <option value="≥60">&ge;60</option>
+        </select>
+      </div>
+      <div>
+        <p class="p4">Enter Total applicable deduction</p>
+        <i class="bi bi-patch-question answer-icon answer-icon4"></i>
+        <span class="ans-tooltip3" id="ans-tooltip4">  A total amount an individual can claim to reduce their tax liability</span>
+        <input type="text" id="deductions" class="number-input" placeholder="Add total application deduction" required>
+        <i class=" bi-patch-exclamation error-icon error-icon3" id="deductionsError"></i>
+        <span class="tooltip3" id="deductionsTooltip"> Only numbers are allowed</span>
+      </div>
+      <button class="btn" type="submit">Submit</button>
+      <div class="box" id="box">
+        <p class="box-text">Total income after tax deduction is: <span id="final-income"></span></p>
+        <p class="box-text">Total Payable Tax is: <span id="final-tax"></span> </p>
+        <button class="box-btn" id="exit-btn" type="button">Close</button>
+      </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
