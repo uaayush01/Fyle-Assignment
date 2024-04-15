@@ -277,3 +277,34 @@ input {
 .box-btn:hover{
 background-color: rgb(11, 11, 221);
 }
+@media screen and (max-width: 768px) {
+  .answer-icon,
+  .error-icon {
+    display: none; /* Hide icons on smaller screens */
+  }
+  
+  .ans-tooltip,
+  .tooltip1,
+  .tooltip2,
+  .tooltip3 {
+    display: none; /* Hide tooltips on smaller screens */
+  }
+  
+  .box {
+    display: block; /* Show box on smaller screens */
+  }
+  
+  .box-btn {
+    top: 90%; /* Adjust button position */
+    left: 50%; /* Center button */
+    transform: translateX(-50%);
+  }
+  form{
+    height: 100%;
+    width: 100%;
+  }
+  h1{
+    margin-top: 20px;
+  }
+ 
+}
